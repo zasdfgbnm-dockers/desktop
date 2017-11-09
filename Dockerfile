@@ -1,7 +1,7 @@
 FROM zasdfgbnmsystem/basic
 
 # setup
-COPY yaourt /
+COPY yaourt custom_repo.conf /
 
 USER root
 RUN cat custom_repo.conf >> /etc/pacman.conf
