@@ -1,11 +1,7 @@
-FROM zasdfgbnmsystem/basic
+FROM zasdfgbnmsystem/archlinux-kde
 
 # setup
-COPY yaourt custom_repo.conf /
-
-USER root
-RUN cat custom_repo.conf >> /etc/pacman.conf
-RUN pacman -Sy --noconfirm archlinuxcn-keyring
+COPY yaourt /
 
 # install packages
 USER user
