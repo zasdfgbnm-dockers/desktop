@@ -1,2 +1,112 @@
+# Desktop environment & basic tools
 plasma-meta
+kde-applications-meta
 xorg-xinit
+xorg
+xorg-drivers
+lxqt
+mesa-demos
+xclip
+d-feet
+nvidia-utils
+
+# KDE
+plasma5-applet-awesome-widgets
+plasma5-applets-thermal-monitor-git
+plasma5-applets-weather-widget
+
+# beautify
+conky-colors-git
+conky-manager
+
+# management
+partitionmanager
+gparted
+android-tools
+
+# web & network
+networkmanager-openconnect
+networkmanager-pptp
+networkmanager-strongswan
+ktorrent
+filezilla
+wireshark-qt
+create_ap-gui
+
+# office
+lastpass
+qtiplot
+lyx
+kbibtex
+inkscape
+gimp
+pdfshuffler
+simplescreenrecorder
+libreoffice-fresh
+chrome-remote-desktop
+avogadro
+pdftk-bin
+kgraphviewer
+
+# texlive
+texlive-most
+texlive-langchinese
+
+# contact
+skypeforlinux-bin
+slack-desktop
+franz
+
+# cloud disk
+dropbox
+megasync
+insync
+
+# Games & entertainments
+you-get
+mencoder
+kwplayer
+supertux
+supertuxkart
+syobon
+neverball
+steam-fonts
+linux-steam-integration
+steam
+netease-cloud-music
+
+# fonts & artwork
+wqy-bitmapfont
+wqy-microhei
+wqy-zenhei
+ttf-arphic-ukai
+ttf-arphic-uming
+adobe-source-han-sans-cn-fonts
+archlinux-artwork
+archlinux-themes-sddm
+archlinux-wallpaper
+deepin-wallpapers
+
+# development
+atom
+visual-studio-code
+meld
+sqlitebrowser
+sourcetrail
+opencv
+octave
+
+# i18n
+fcitx
+kcm-fcitx
+fcitx-gtk2
+fcitx-gtk3
+fcitx-sogoupinyin
+
+# virtualization
+ovmf
+qemu
+virtualbox
+virtualbox-ext-oracle
+virtualbox-guest-utils
+virt-manager

@@ -1,0 +1,2 @@
+#!/bin/bash
+nvidia-docker run --privileged --network=host --pid=host -v /dev:/dev -v $(pwd):/workspace -v $HOME:$HOME -v /etc/group:/etc/group:ro -v /etc/passwd:/etc/passwd:ro -v /tmp:/tmp -v /run:/run -u $(id -u) -v /home/gaoxiang/tmp:/home -v /var/run:/var/run -w /workspace -e DISPLAY 5599a1bb2819 startkde

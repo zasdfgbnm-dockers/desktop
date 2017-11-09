@@ -1,16 +1,14 @@
-FROM base/devel:latest
-EXPOSE 0-65535
+FROM zasdfgbnmsystem/basic
 
 # setup
-COPY yaourt custom_repo.conf /
-COPY zshrc /etc/zsh/
+COPY yaourt /
+
+USER root
 RUN cat custom_repo.conf >> /etc/pacman.conf
-RUN pacman -Syu --noconfirm sudo yaourt archlinuxcn-keyring
-RUN echo "ALL ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-RUN useradd -ms /bin/bash unprivileged
+RUN pacman -Syu --noconfirm archlinuxcn-keyring
 
 # install packages
-USER unprivileged
+USER user
 RUN yaourt -S --noconfirm $(grep '^\w.*' /yaourt)
 USER root
 
