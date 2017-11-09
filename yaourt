@@ -4,6 +4,7 @@ gparted
 android-tools
 
 # web & network
+chromium
 ktorrent
 filezilla
 wireshark-qt
@@ -20,7 +21,6 @@ pdfshuffler
 simplescreenrecorder
 libreoffice-fresh
 chrome-remote-desktop
-avogadro
 pdftk-bin
 kgraphviewer
 
