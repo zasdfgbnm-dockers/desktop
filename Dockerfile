@@ -5,11 +5,11 @@ COPY yaourt custom_repo.conf /
 
 USER root
 RUN cat custom_repo.conf >> /etc/pacman.conf
-RUN pacman -Syu --noconfirm archlinuxcn-keyring
+RUN pacman -Sy --noconfirm archlinuxcn-keyring
 
 # install packages
 USER user
-RUN yaourt -S --noconfirm $(grep '^\w.*' /yaourt)
+RUN yaourt -Syu --noconfirm $(grep '^\w.*' /yaourt)
 USER root
 
 # cleanups
