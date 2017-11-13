@@ -10,3 +10,5 @@ USER root
 
 # cleanups
 RUN yes | pacman -Scc
+
+CMD [ "dbus-launch", "--exit-with-session", "startkde" ]
