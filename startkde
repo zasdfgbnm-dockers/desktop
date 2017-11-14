@@ -1,4 +1,4 @@
 #!/bin/zsh
-systemctl --user stop pulseaudio
+systemctl --user stop pulseaudio.service pulseaudio.socket
 pulseaudio --daemonize
 startkde
