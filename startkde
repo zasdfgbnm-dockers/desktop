@@ -1,0 +1,4 @@
+#!/bin/zsh
+systemctl --user stop pulseaudio
+pulseaudio --daemonize
+startkde

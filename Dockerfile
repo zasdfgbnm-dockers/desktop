@@ -1,7 +1,7 @@
 FROM zasdfgbnmsystem/archlinux-kde
 
 # setup
-COPY yaourt /
+COPY yaourt startkde /
 
 # install packages
 USER user
@@ -11,4 +11,4 @@ USER root
 # cleanups
 RUN yes | pacman -Scc
 
-CMD [ "dbus-launch", "--exit-with-session", "startkde" ]
+CMD [ "dbus-launch", "--exit-with-session", "/startkde" ]
