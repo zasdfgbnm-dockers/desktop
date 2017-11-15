@@ -5,6 +5,7 @@ android-tools
 
 # web & network
 chromium
+firefox
 ktorrent
 filezilla
 wireshark-qt
