@@ -9,6 +9,8 @@ firefox
 ktorrent
 filezilla
 wireshark-qt
+tcpdump
+nmap
 create_ap-gui
 
 # office
