@@ -11,6 +11,7 @@ filezilla
 wireshark-qt
 tcpdump
 nmap
+bind-tools
 create_ap-gui
 
 # office
