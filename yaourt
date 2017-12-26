@@ -1,4 +1,10 @@
+# system
+mkinitcpio-docker-hooks
+systemd-sysvcompat
+linux
+
 # management
+netdata
 partitionmanager
 gparted
 android-tools

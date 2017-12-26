@@ -6,6 +6,19 @@ USER user
 RUN yaourt -Syua --noconfirm $(grep '^\w.*' /yaourt)
 USER root
 
-COPY startkde /
+# setting up mkinitcpio
+RUN sed -i 's/archlinux\/base/zasdfgbnmsystem\/desktop/g' /etc/docker-btrfs.sh
+RUN perl -i -p -e 's/(?<=^HOOKS=\()(.*)(?=\))/$1 docker-btrfs/g' /etc/mkinitcpio.conf
 
+# setting up sshd
+RUN sed -i 's/.*PasswordAuthentication .*/PasswordAuthentication no/g' /etc/ssh/sshd_config
+
+# setting up services
+RUN systemctl enable sshd docker sddm netdata
+
+# clean up
+RUN rm /boot/*.img
+
+# allow running as xsession
+COPY startkde /
 CMD [ "dbus-launch", "--exit-with-session", "/startkde" ]
