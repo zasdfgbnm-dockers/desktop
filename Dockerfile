@@ -19,6 +19,9 @@ RUN systemctl enable sshd docker sddm netdata
 # clean up
 RUN rm /boot/*.img
 
+# copy gen_boot
+COPY gen_boot /usr/bin
+
 # allow running as xsession
 COPY startkde /
 CMD [ "dbus-launch", "--exit-with-session", "/startkde" ]
