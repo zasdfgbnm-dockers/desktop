@@ -3,7 +3,7 @@ FROM zasdfgbnmsystem/archlinux-kde
 # install packages
 COPY yaourt /
 USER user
-RUN yaourt -Syu --noconfirm $(grep '^\w.*' /yaourt)
+RUN  yaourt -Syua --noconfirm && yaourt -S --noconfirm $(grep '^\w.*' /yaourt)
 USER root
 
 # setting up mkinitcpio
