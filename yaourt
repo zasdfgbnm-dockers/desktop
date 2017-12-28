@@ -65,7 +65,11 @@ octave
 # virtualization
 ovmf
 qemu
+virt-manager
 virtualbox
 virtualbox-ext-oracle
 virtualbox-guest-utils
-virt-manager
+virtualbox-guest-iso
+virtualbox-host-modules-arch
+virtualbox-guest-modules-arch
+virtualbox-ext-vnc
