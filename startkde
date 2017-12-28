@@ -1,5 +1,0 @@
-#!/bin/zsh
-sudo mount -o remount,size=8G /dev/shm
-systemctl --user stop pulseaudio.service pulseaudio.socket
-pulseaudio --daemonize
-startkde
