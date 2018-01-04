@@ -1,9 +1,12 @@
 FROM zasdfgbnmsystem/archlinux-kde
 
 # install packages
-COPY yaourt /
+COPY yaourt pacman /
+USER root
+RUN  pacman -Syu --noconfirm && pacman -S --noconfirm $(grep '^\w.*' /pacman)
 USER user
-RUN  yaourt -Syua --noconfirm && yaourt -S --noconfirm $(grep '^\w.*' /yaourt)
+RUN  yaourt -Syua --noconfirm || true
+RUN for i in $(grep '^\w.*' /yaourt); do yaourt -S --noconfirm $i || true; done
 USER root
 
 # setting up mkinitcpio
