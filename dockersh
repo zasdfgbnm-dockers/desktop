@@ -6,12 +6,12 @@ OPT="-it --privileged --network=host --pid=host -v $(pwd):/workspace -v $HOME:$H
 
 image=$1
 shift
-if [ -z $image ]; then
+if [ -z "$image" ]; then
     die "please specify image name"
 fi
 
 cmd="$@"
-if [ -z "$@" ]; then
+if [ -z "$cmd" ]; then
     cmd=$(pinky -l $USER|grep -oP 'Shell:\s*\K.*')
 fi
-echo exec docker run $OPT "zasdfgbnmsystem/$image" $cmd
+exec docker run $OPT "zasdfgbnmsystem/$image" $cmd
