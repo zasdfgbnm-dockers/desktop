@@ -1,0 +1,17 @@
+#!/bin/bash
+
+die() { echo "$*" 1>&2 ; exit 1; }
+
+OPT="-it --privileged --network=host --pid=host -v $(pwd):/workspace -v $HOME:$HOME -v /etc/group:/etc/group:ro -v /dev:/dev -v /etc/passwd:/etc/passwd:ro -u $(id -u) -w /workspace"
+
+image=$1
+shift
+if [ -z $image ]; then
+    die "please specify image name"
+fi
+
+cmd="$@"
+if [ -z "$@" ]; then
+    cmd=$(pinky -l $USER|grep -oP 'Shell:\s*\K.*')
+fi
+echo exec docker run $OPT "zasdfgbnmsystem/$image" $cmd

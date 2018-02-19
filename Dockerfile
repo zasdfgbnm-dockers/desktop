@@ -1,8 +1,9 @@
 FROM zasdfgbnmsystem/archlinux-kde
 
 # install packages
-COPY yaourt pacman /
 USER root
+COPY yaourt pacman /
+COPY dockersh /usr/bin/
 RUN  pacman -Syu --noconfirm && pacman -S --noconfirm $(grep '^\w.*' /pacman)
 USER user
 RUN  yaourt -Syua --noconfirm || true
