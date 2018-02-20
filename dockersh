@@ -14,4 +14,4 @@ cmd="$@"
 if [ -z "$cmd" ]; then
     cmd=$(pinky -l $USER|grep -oP 'Shell:\s*\K.*')
 fi
-exec docker run $OPT "zasdfgbnmsystem/$image" $cmd
+exec nvidia-docker run $OPT "zasdfgbnmsystem/$image" $cmd
