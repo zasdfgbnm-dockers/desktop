@@ -13,6 +13,7 @@ wireshark-qt
 tcpdump
 nmap
 bind-tools
+sshfs
 
 # office
 qtiplot
