@@ -10,8 +10,9 @@ RUN  yaourt -Syua --noconfirm || true
 RUN for i in $(grep '^\w.*' /yaourt); do yaourt -S --noconfirm $i || true; done
 USER root
 
-# setting up mkinitcpio
+# system settings
 RUN sed -i 's/archlinux-kde/desktop/g' /etc/docker-btrfs.json
+RUN echo 'fs.inotify.max_user_watches=524288' > /etc/sysctl.d/inotify
 
 # setting up services
 RUN systemctl enable docker netdata
