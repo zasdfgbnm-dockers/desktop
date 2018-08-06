@@ -70,3 +70,6 @@ virtualbox-guest-iso
 virtualbox-host-modules-arch
 virtualbox-guest-modules-arch
 virtualbox-ext-vnc
+
+# drivers
+broadcom-wl
