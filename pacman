@@ -72,4 +72,4 @@ virtualbox-guest-modules-arch
 virtualbox-ext-vnc
 
 # drivers
-broadcom-wl
+broadcom-wl-dkms
