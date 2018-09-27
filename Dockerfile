@@ -16,5 +16,6 @@ RUN echo 'fs.inotify.max_user_watches=524288' > /etc/sysctl.d/inotify.conf
 
 # setting up services
 RUN systemctl enable docker netdata
+RUN pip install xonsh-docker-tabcomplete xonsh-vox-tabcomplete
 
 COPY sddm.conf /etc/sddm.conf
