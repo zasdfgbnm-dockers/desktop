@@ -15,7 +15,8 @@ RUN sed -i 's/archlinux-kde/desktop/g' /etc/docker-btrfs.json
 RUN echo 'fs.inotify.max_user_watches=524288' > /etc/sysctl.d/inotify.conf
 
 # setting up services
-RUN systemctl enable docker netdata
+RUN systemctl enable docker netdata libvirtd
 RUN pip install xonsh-docker-tabcomplete xonsh-vox-tabcomplete
 
 COPY sddm.conf /etc/sddm.conf
+COPY qemu.conf /etc/libvirt
