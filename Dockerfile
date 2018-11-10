@@ -2,13 +2,16 @@ FROM zasdfgbnmsystem/archlinux-kde
 
 # install packages
 USER root
-COPY yaourt pacman /
+COPY yaourt pacman install_netdata_nv_plugin.sh /
 COPY dockersh /usr/bin/
 RUN  pacman -Syu --noconfirm && pacman -S --noconfirm $(grep '^\w.*' /pacman)
 USER user
 RUN  yaourt -Syua --noconfirm || true
 RUN for i in $(grep '^\w.*' /yaourt); do yaourt -S --noconfirm $i || true; done
 USER root
+
+# install netdata_nv_plugin
+RUN /install_netdata_nv_plugin.sh
 
 # system settings
 RUN sed -i 's/archlinux-kde/desktop/g' /etc/docker-btrfs.json
