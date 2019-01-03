@@ -22,7 +22,7 @@ lyx
 kbibtex
 inkscape
 gimp
-pdfshuffler
+# pdfshuffler
 simplescreenrecorder
 libreoffice-fresh
 chrome-remote-desktop
