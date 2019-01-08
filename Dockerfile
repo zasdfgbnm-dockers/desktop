@@ -19,7 +19,7 @@ RUN echo 'fs.inotify.max_user_watches=524288' > /etc/sysctl.d/inotify.conf
 
 # setting up services
 RUN systemctl enable docker netdata libvirtd
-RUN pip install xonsh-docker-tabcomplete xonsh-vox-tabcomplete
+RUN pip install xonsh-docker-tabcomplete xonsh-vox-tabcomplete pytorch-ignite
 
 COPY sddm.conf /etc/sddm.conf
 COPY qemu.conf /etc/libvirt
