@@ -65,7 +65,6 @@ ovmf
 qemu
 virt-manager
 virtualbox
-virtualbox-ext-oracle
 virtualbox-guest-utils
 virtualbox-guest-iso
 virtualbox-host-modules-arch
