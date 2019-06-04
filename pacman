@@ -26,7 +26,6 @@ gimp
 simplescreenrecorder
 libreoffice-fresh
 chrome-remote-desktop
-pdftk-bin
 kgraphviewer
 
 # texlive
@@ -44,10 +43,8 @@ baidupcs-go-bin
 vlc
 youtube-dl
 mencoder
-kwplayer
 supertux
 supertuxkart
-netease-cloud-music
 
 # development
 yakuake
