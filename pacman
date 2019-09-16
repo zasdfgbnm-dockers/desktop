@@ -17,6 +17,7 @@ traceroute
 sshfs
 openbsd-netcat
 
+
 # office
 lyx
 kbibtex
@@ -45,6 +46,7 @@ youtube-dl
 mencoder
 supertux
 supertuxkart
+plex-media-server
 
 # development
 yakuake
