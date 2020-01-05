@@ -1,8 +1,8 @@
 # office
 lyx
-kbibtex
 texlive-most
 texlive-langchinese
+libreoffice-fresh
 
 # development
 cuda
