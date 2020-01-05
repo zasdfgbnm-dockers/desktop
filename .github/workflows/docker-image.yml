@@ -1,0 +1,23 @@
+name: docker-image
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build the Docker image
+      run: docker build --pull --no-cache . --tag zasdfgbnmsystem/desktop
+    - name: Publish the Docker image
+      run: |
+        docker login -u zasdfgbnm -p ${{secrets.zasdfgbnm_bot_dockerhub_password}}
+        docker push zasdfgbnmsystem/desktop

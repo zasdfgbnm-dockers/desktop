@@ -1,25 +1,25 @@
-FROM zasdfgbnmsystem/archlinux-kde
+FROM zasdfgbnmsystem/basic
 
-# install packages
 USER root
 COPY yaourt pacman install_netdata_nv_plugin.sh /
-COPY dockersh /usr/bin/
-RUN  pacman -Syu --noconfirm && pacman -S --noconfirm $(grep '^\w.*' /pacman)
-USER user
-RUN  yaourt -Syua --noconfirm || true
+
+# do a full upgrade first
+RUN pacman -Sy --noconfirm archlinuxcn-keyring archlinux-keyring
+RUN sudo -u user yaourt -Syua --noconfirm || true
+
+# install all packages
+RUN pacman -S --noconfirm $(grep '^\w.*' /pacman)
 RUN for i in $(grep '^\w.*' /yaourt); do yaourt -S --noconfirm $i || true; done
-USER root
 
 # install netdata_nv_plugin
 RUN /install_netdata_nv_plugin.sh
 
 # system settings
-RUN sed -i 's/archlinux-kde/desktop/g' /etc/docker-btrfs.json
+RUN systemctl enable libvirtd sddm NetworkManager
+RUN sed -i 's/basic/desktop/g' /etc/docker-btrfs.json
 RUN echo 'fs.inotify.max_user_watches=524288' > /etc/sysctl.d/inotify.conf
-
-# setting up services
-RUN systemctl enable docker netdata libvirtd
-RUN pip install xonsh-docker-tabcomplete xonsh-vox-tabcomplete pytorch-ignite
 
 COPY sddm.conf /etc/sddm.conf
 COPY qemu.conf /etc/libvirt
+
+USER user

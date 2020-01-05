@@ -8,3 +8,12 @@ slack-desktop
 kwplayer
 netease-cloud-music
 pdftk-bin
+nvidia-container-toolkit
+
+# artwork
+archlinux-artwork
+archlinux-themes-sddm
+
+# plugins
+plasma5-applet-awesome-widgets
+plasma5-applets-thermal-monitor-git
