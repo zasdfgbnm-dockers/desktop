@@ -1,2 +1,2 @@
 FROM zasdfgbnmsystem/desktop-small
-RUN sudo pacman -S --noconfirm texlive-most libreoffice-fresh cuda cudnn
+RUN sudo pacman -S --noconfirm texlive-most cuda cudnn kde-applications-meta
