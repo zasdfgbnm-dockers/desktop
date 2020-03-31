@@ -1,2 +1,2 @@
 FROM zasdfgbnmsystem/desktop-small
-RUN sudo yaourt -S --noconfirm texlive-most cuda cudnn kde-applications-meta slack-desktop
+RUN sudo -u user yaourt -S --noconfirm texlive-most cuda cudnn kde-applications-meta slack-desktop
