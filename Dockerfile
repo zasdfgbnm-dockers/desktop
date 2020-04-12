@@ -1,2 +1,3 @@
 FROM zasdfgbnmsystem/desktop-small
-RUN sudo pacman -S --noconfirm texlive-most cuda cudnn kde-applications-meta
+COPY PKGBUILD /zasdfgbnmsystem-desktop/PKGBUILD
+RUN yaourt -P -i --noconfirm /zasdfgbnmsystem-desktop
