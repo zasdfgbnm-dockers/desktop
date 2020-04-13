@@ -1,3 +1,3 @@
-FROM zasdfgbnmsystem/desktop-small
-COPY PKGBUILD /zasdfgbnmsystem-desktop/PKGBUILD
-RUN yaourt -P -i --noconfirm /zasdfgbnmsystem-desktop
+FROM zasdfgbnmsystem/basic
+RUN yaourt -Sy --noconfirm xorg xorg-drivers texlive-most zasdfgbnmsystem-desktop
+
