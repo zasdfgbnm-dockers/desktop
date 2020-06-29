@@ -1,8 +1,14 @@
 #!/bin/bash
 
+set -ex
+
+pacman -R --noconfirm zasdfgbnmsystem-desktop
+pacman -Rns --noconfirm nvidia nvidia-settings nvidia-utils cuda cudnn magma
+sudo -u user yaourt -Sy --noconfirm gcc8 nvidia-beta nvidia-utils-beta nvidia-settings-beta
+
 wget -q http://developer.download.nvidia.com/compute/cuda/11.0.1/local_installers/cuda_11.0.1_450.36.06_linux.run
 chmod +x cuda_11.0.1_450.36.06_linux.run
-./cuda_11.0.1_450.36.06_linux.run --override --toolkit --silent
+bash --verbose ./cuda_11.0.1_450.36.06_linux.run --override --toolkit --silent
 rm -f cuda_11.0.1_450.36.06_linux.run
 
 cat <<EOF > /etc/profile.d/cuda.sh
