@@ -1,0 +1,100 @@
+pkgname=zasdfgbnmsystem-desktop
+pkgver=1
+pkgrel=1
+arch=(any)
+depends=(
+	zasdfgbnmsystem-desktop-small
+
+	# system
+	exfat-utils
+	ntfs-3g
+	partitionmanager
+	gparted
+	hyper
+	alacritty
+	system-config-printer
+
+	# nvidia
+	nvidia-container-toolkit
+	nvidia
+	nvidia-utils
+	nvidia-settings
+	magma
+	cuda
+	cuda-tools
+	cudnn
+	nccl
+	nvtop
+
+	# web & network
+	chromium
+ 	google-chrome
+	firefox
+	lastpass
+	brave-bin
+
+	# office
+	lyx
+	texlive-langchinese
+	gimp
+	simplescreenrecorder
+	kgraphviewer
+	pdfarranger
+	kbibtex
+	slack-desktop
+ 	teams
+	sagemath
+ 	zoom
+	telegram-desktop
+
+	#desktop
+	plasma-wayland-session
+	plasma-nm
+	kde-applications-meta
+
+	# Games & entertainments
+	vlc
+	youtube-dl
+	you-get
+	mencoder
+
+	# development
+ 	visual-studio-code-bin
+	meld
+	sqlitebrowser
+	opencv
+	intel-mkl
+	anaconda
+	katex
+	llvm
+	valgrind
+	imhex
+
+	# artwork
+	archlinux-wallpaper
+	archlinux-artwork
+
+	# fonts
+	wqy-bitmapfont
+	wqy-microhei
+	wqy-zenhei
+	ttf-arphic-ukai
+	ttf-arphic-uming
+	adobe-source-han-sans-cn-fonts
+
+	# i18n
+	fcitx5-chinese-addons-git
+	fcitx5-git
+	fcitx5-gtk-git
+	fcitx5-qt4-git
+	fcitx5-qt5-git
+	fcitx5-configtool-git
+
+	# virtualization
+	genymotion
+	virtualbox
+	virtualbox-guest-iso
+	virtualbox-host-modules-arch
+	virtualbox-guest-utils
+	virtualbox-ext-vnc
+)
