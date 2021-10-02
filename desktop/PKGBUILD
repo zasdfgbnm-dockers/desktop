@@ -65,7 +65,7 @@ depends=(
 	opencv
 	intel-mkl
 	anaconda
-	katex
+	# katex
 	llvm
 	valgrind
 	imhex
