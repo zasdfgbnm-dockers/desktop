@@ -71,6 +71,7 @@ depends=(
 	imhex
 	ghidra
 	rz-cutter
+	iaito
 
 	# artwork
 	archlinux-wallpaper
