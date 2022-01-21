@@ -69,6 +69,7 @@ depends=(
 	llvm
 	valgrind
 	imhex
+	ghidra
 
 	# artwork
 	archlinux-wallpaper
