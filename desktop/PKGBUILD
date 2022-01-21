@@ -70,7 +70,7 @@ depends=(
 	valgrind
 	imhex
 	ghidra
-	iaito
+	rz-cutter
 
 	# artwork
 	archlinux-wallpaper
