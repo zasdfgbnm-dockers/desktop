@@ -46,6 +46,7 @@ depends=(
 	sagemath
  	zoom
 	telegram-desktop
+	freerdp
 
 	#desktop
 	plasma-wayland-session
