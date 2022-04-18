@@ -9,5 +9,5 @@ COPY desktop /tmp/desktop
 USER user
 RUN sudo chown -R user:user /tmp/desktop
 WORKDIR /tmp/desktop
-RUN makepkg -p ./PKGBUILD --printsrcinfo | awk '{$1=$1};1' | grep -oP '(?<=^depends = ).*' | xargs yay -S --noconfirm
+RUN makepkg -p ./PKGBUILD --printsrcinfo | awk '{$1=$1};1' | grep -oP '(?<=^depends = ).*' | xargs yay -Syu --noconfirm
 RUN makepkg -i --noconfirm
