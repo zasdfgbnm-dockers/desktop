@@ -48,6 +48,7 @@ depends=(
 	telegram-desktop
 	freerdp
 	pandoc
+	hplip
 
 	#desktop
 	plasma-wayland-session
