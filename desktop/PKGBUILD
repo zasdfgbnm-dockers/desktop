@@ -49,6 +49,7 @@ depends=(
 	freerdp
 	pandoc
 	hplip
+	libreoffice-fresh
 
 	#desktop
 	plasma-wayland-session
