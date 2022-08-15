@@ -63,7 +63,7 @@ depends=(
 	mencoder
 
 	# development
- 	code
+ 	visual-studio-code-bin
 	meld
 	sqlitebrowser
 	opencv
