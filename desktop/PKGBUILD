@@ -13,6 +13,7 @@ depends=(
 	hyper
 	alacritty
 	system-config-printer
+	uboot-tools
 
 	# nvidia
 	nvidia-container-toolkit
