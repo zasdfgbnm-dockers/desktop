@@ -53,8 +53,6 @@ depends=(
 	libreoffice-fresh
 
 	#desktop
-	plasma-wayland-session
-	plasma-nm
 	kde-applications-meta
 
 	# Games & entertainments
