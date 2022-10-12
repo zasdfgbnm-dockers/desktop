@@ -76,6 +76,7 @@ depends=(
 	rz-cutter
 	iaito
 	gcc11
+	python-pytorch-opt-cuda
 
 	# artwork
 	archlinux-wallpaper
