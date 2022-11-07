@@ -55,6 +55,9 @@ depends=(
 
 	#desktop
 	kde-applications-meta
+
+	# remote desktop
+	python-ldap # recommended by thinlinc
 	thinlinc
 	thinlinc-server
 
