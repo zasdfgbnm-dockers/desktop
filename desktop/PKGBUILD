@@ -51,6 +51,7 @@ depends=(
 	pandoc
 	hplip
 	libreoffice-fresh
+	blender
 
 	#desktop
 	kde-applications-meta
