@@ -55,6 +55,8 @@ depends=(
 
 	#desktop
 	kde-applications-meta
+	thinlinc
+	thinlinc-server
 
 	# Games & entertainments
 	vlc
