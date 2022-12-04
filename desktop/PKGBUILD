@@ -97,15 +97,15 @@ depends=(
 	adobe-source-han-sans-cn-fonts
 
 	# i18n
-	fcitx5-chinese-addons-git
 	fcitx5-git
 	fcitx5-gtk-git
 	fcitx5-qt4-git
 	fcitx5-qt5-git
 	fcitx5-configtool-git
+	fcitx5-cn-meta
 
 	# virtualization
-	genymotion
+	# genymotion
 	virtualbox
 	virtualbox-guest-iso
 	virtualbox-host-modules-arch
