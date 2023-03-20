@@ -30,6 +30,7 @@ depends=(
 	# web & network
 	chromium
  	google-chrome
+	microsoft-edge-stable-bin
 	firefox
 	lastpass
 	brave-bin
