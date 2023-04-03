@@ -97,11 +97,11 @@ depends=(
 	adobe-source-han-sans-cn-fonts
 
 	# i18n
-	fcitx5-git
-	fcitx5-gtk-git
-	fcitx5-qt4-git
-	fcitx5-qt5-git
-	fcitx5-configtool-git
+	fcitx5
+	fcitx5-gtk
+	fcitx5-qt4
+	fcitx5-qt5
+	fcitx5-configtool
 	fcitx5-cn-meta
 
 	# virtualization
