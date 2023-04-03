@@ -44,7 +44,6 @@ depends=(
 	pdfarranger
 	kbibtex
 	slack-desktop
- 	teams
 	sagemath
  	zoom
 	telegram-desktop
