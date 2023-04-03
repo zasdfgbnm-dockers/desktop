@@ -97,7 +97,10 @@ depends=(
 	adobe-source-han-sans-cn-fonts
 
 	# i18n
-	fcitx5-im
+	fcitx5
+	fcitx5-qt
+	fcitx5-gtk
+	fcitx5-configtool
 	fcitx5-chinese-addons
 
 	# virtualization
