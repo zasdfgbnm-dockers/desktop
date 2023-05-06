@@ -1,5 +1,5 @@
 FROM zasdfgbnmsystem/desktop-small
-RUN yay -Syu --noconfirm virtualbox-host-modules-arch texlive-most
+RUN pacman -Syu --noconfirm virtualbox-host-modules-arch texlive-most
 
 # disable cgroup usage of nvidia docker as a workaround for https://github.com/NVIDIA/libnvidia-container/issues/111#issuecomment-782332657
 # RUN sudo sed -i 's/#no-cgroups = false/no-cgroups = true/g' /etc/nvidia-container-runtime/config.toml
