@@ -10,8 +10,6 @@ depends=(
 	ntfs-3g
 	partitionmanager
 	gparted
-	hyper
-	alacritty
 	system-config-printer
 	uboot-tools
 
