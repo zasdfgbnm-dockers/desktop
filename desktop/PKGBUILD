@@ -50,6 +50,7 @@ depends=(
 	hplip
 	libreoffice-fresh
 	blender
+	texlive-meta
 
 	#desktop
 	kde-applications-meta
