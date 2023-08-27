@@ -57,8 +57,6 @@ depends=(
 
 	# remote desktop
 	python-ldap # recommended by thinlinc
-	thinlinc
-	thinlinc-server
 
 	# Games & entertainments
 	vlc
