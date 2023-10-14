@@ -51,6 +51,7 @@ depends=(
 	libreoffice-fresh
 	blender
 	texlive-meta
+	musescore
 
 	#desktop
 	kde-applications-meta
