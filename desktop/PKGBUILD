@@ -64,6 +64,7 @@ depends=(
 	youtube-dl
 	you-get
 	mencoder
+	rpcs3-git
 
 	# development
  	visual-studio-code-bin
