@@ -82,6 +82,7 @@ depends=(
 	iaito
 	python-pytorch-opt-cuda
 	aarch64-linux-gnu-gcc
+	qtcreator
 
 	# artwork
 	archlinux-wallpaper
