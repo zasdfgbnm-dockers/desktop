@@ -63,7 +63,7 @@ depends=(
 	# Games & entertainments
 	vlc
 	youtube-dl
-	you-get
+	# you-get
 	mencoder
 	# rpcs3-git
 
