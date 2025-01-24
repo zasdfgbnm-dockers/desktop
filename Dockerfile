@@ -1,5 +1,5 @@
 FROM zasdfgbnmsystem/desktop-small
-RUN sudo pacman -Syu --noconfirm virtualbox-host-modules-arch
+RUN sudo pacman -Syu --noconfirm virtualbox-host-modules-arch nerd-fonts
 
 COPY desktop /usr/local/share/packages/desktop
 COPY desktop /tmp/desktop
