@@ -85,6 +85,15 @@ depends=(
 	aarch64-linux-gnu-gcc
 	qtcreator
 
+	# machine learning
+	python-huggingface-hub
+	python-datasets
+	python-transformers
+	python-accelerate
+	python-bitsandbytes-git
+	# python-vllm-cuda
+	# python-tensorrt
+
 	# artwork
 	archlinux-wallpaper
 	archlinux-artwork
