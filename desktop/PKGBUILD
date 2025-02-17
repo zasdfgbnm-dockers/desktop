@@ -90,7 +90,7 @@ depends=(
 	python-datasets
 	python-transformers
 	python-accelerate
-	python-bitsandbytes-git
+	# python-bitsandbytes-git
 	# python-vllm-cuda
 	# python-tensorrt
 
