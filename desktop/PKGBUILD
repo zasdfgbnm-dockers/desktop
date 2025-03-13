@@ -69,6 +69,7 @@ depends=(
 
 	# development
  	visual-studio-code-bin
+	cursor-bin
 	meld
 	sqlitebrowser
 	opencv
